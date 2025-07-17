@@ -1,25 +1,25 @@
 <?php
 
 /**
- * Plugin Name: Breakdance Custom Elements
- * Plugin URI: https://breakdance.com/
- * Description: Boilerplate plugin to save your custom elements created with Element Studio.
- * Author: Breakdance
- * Author URI: https://breakdance.com/
+ * Plugin Name: Brandon's Custom Elements
+ * Plugin URI: https://brandchy.com/
+ * Description: Brandon's custom elements used to make faeetures not native to Breakdance. 
+ * Author: Brandon
+ * Author URI: https://brandchy.com/
  * License: GPLv2
  * Text Domain: breakdance
  * Domain Path: /languages/
  * Version: 0.0.1
  */
 
-namespace BreakdanceCustomElements;
+namespace BrandonCustomElements;
 
 use function Breakdance\Util\getDirectoryPathRelativeToPluginFolder;
 
 add_action('breakdance_loaded', function () {
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/elements',
-        'BreakdanceCustomElements',
+        'BrandonCustomElements',
         'element',
         'Custom Elements',
         false
@@ -27,7 +27,7 @@ add_action('breakdance_loaded', function () {
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/macros',
-        'BreakdanceCustomElements',
+        'BrandonCustomElements',
         'macro',
         'Custom Macros',
         false,
@@ -35,7 +35,7 @@ add_action('breakdance_loaded', function () {
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/presets',
-        'BreakdanceCustomElements',
+        'BrandonCustomElements',
         'preset',
         'Custom Presets',
         false,
